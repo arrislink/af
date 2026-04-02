@@ -1,0 +1,7 @@
+# AI Factory workspace data (shared across all projects, not versioned)
+.ai/
+context/
+tasks/
+
+# Compiled binary
+af
