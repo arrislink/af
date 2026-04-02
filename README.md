@@ -73,12 +73,37 @@ All AI tools must follow (see `AGENTS.md`):
 
 ## Install
 
-```bash
-# Via Go install
-go install github.com/arrislink/af/cmd/af@latest
+### Option 1: Download Binary (Fastest)
 
-# Or clone
-git clone <repo> && cd ai-factory
+```bash
+# macOS amd64
+curl -L https://github.com/arrislink/af/releases/latest/download/af-darwin-amd64 -o af
+chmod +x af
+./af init
+
+# macOS ARM64
+curl -L https://github.com/arrislink/af/releases/latest/download/af-darwin-arm64 -o af
+chmod +x af
+./af init
+
+# Linux amd64
+curl -L https://github.com/arrislink/af/releases/latest/download/af-linux-amd64 -o af
+chmod +x af
+./af init
+```
+
+### Option 2: Go Install
+
+```bash
+go install github.com/arrislink/af/cmd/af@latest
+./af init
+```
+
+### Option 3: Build from Source
+
+```bash
+git clone git@github.com:arrislink/af.git && cd af
+make install
 ./af init
 ```
 
